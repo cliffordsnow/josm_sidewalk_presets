@@ -6,7 +6,7 @@
 		description="Add information about entrances, pavements, kerbs and crosswalks">
 <group name="Separate Sidewalks">
 		<group name="Footways">
-  			<item name="Sidewalk Details" type="way,closedway" icon="https://github.com/species/josm-preset-wheelchair/raw/master/footway-wheelchair.png">
+  			<item name="Sidewalk Details" type="way,closedway" icon="https://github.com/cliffordsnow/josm_sidewalk_presets/raw/master/footway-wheelchair.png">
 					<link wiki="Key:footway" text="Footway wiki page" />
   			<space />
   			<key key="highway" value="footway" /> 
@@ -28,7 +28,7 @@
 			</item>
 		</group>
 		<group name="Crossings">
-  			<item name="Crossing Details" type="way,closedway" icon="https://github.com/species/josm-preset-wheelchair/raw/master/footway-wheelchair.png">
+  			<item name="Crossing Details" type="way,closedway" icon="https://github.com/cliffordsnow/josm_sidewalk_presets/raw/master/footway-wheelchair.png">
 					<link wiki="Key:crossing" text="Crossing wiki page" />
   			<space />
   			<key key="highway" value="footway" /> 
@@ -51,7 +51,7 @@
 			</item>
 		</group>
 		<group name="Crossing Islands">
-  			<item name="Island Details" type="way,closedway" icon="https://github.com/species/josm-preset-wheelchair/raw/master/footway-wheelchair.png">
+  			<item name="Island Details" type="way,closedway" icon="https://github.com/cliffordsnow/josm_sidewalk_presets/raw/master/footway-wheelchair.png">
 					<link wiki="Key:crossing:island" text="crossing islands wiki page" />
   			<space />
   			<key key="highway" value="footway" /> 
@@ -98,15 +98,15 @@
 	                <combo key="conveying" text="Escalator" values="yes,forward,backward,reversible" />
 			</item>
 		</group>
-<item name="Kerb details" icon="https://github.com/species/josm-preset-wheelchair/raw/master/kerb_rolled.png" type="node,way">
+<item name="Kerb details" icon="https://github.com/cliffordsnow/josm_sidewalk_presets/raw/master/kerb_rolled.png" type="node,way">
   <label text="kerbs" />
   <space />
   <key key="barrier" value="kerb" />
   <combo key="kerb" text="type of kerb" >
-    <list_entry value="flush" icon="https://github.com/species/josm-preset-wheelchair/raw/master/kerb_flush.png" />
-    <list_entry value="lowered" icon="https://github.com/species/josm-preset-wheelchair/raw/master/kerb_lowered.png" />
-    <list_entry value="rolled" icon="https://github.com/species/josm-preset-wheelchair/raw/master/kerb_rolled.png" />
-    <list_entry value="raised" icon="https://github.com/species/josm-preset-wheelchair/raw/master/kerb_raised.png" />
+    <list_entry value="flush" icon="https://github.com/cliffordsnow/josm_sidewalk_presets/raw/master/kerb_flush.png" />
+    <list_entry value="lowered" icon="https://github.com/cliffordsnow/josm_sidewalk_presets/raw/master/kerb_lowered.png" />
+    <list_entry value="rolled" icon="https://github.com/cliffordsnow/josm_sidewalk_presets/raw/master/kerb_rolled.png" />
+    <list_entry value="raised" icon="https://github.com/cliffordsnow/josm_sidewalk_presets/raw/master/kerb_raised.png" />
   </combo>
   <space />
   <label text="kerb heights (use “N &lt;space&gt; cm”)" />
