@@ -4,9 +4,9 @@
 		version="0.1" 
 		shortdescription="sidewalks, kerbs &amp; crosswalks" 
 		description="Add information about entrances, pavements, kerbs and crosswalks">
-<group name="Separate Sidewalks">
+<group name="Separate Footways">
 		<group name="Footways">
-  			<item name="Sidewalk Details" type="way,closedway" icon="https://github.com/cliffordsnow/josm_sidewalk_presets/raw/master/footway-wheelchair.png">
+  			<item name="Footways Details" type="way,closedway" icon="https://github.com/cliffordsnow/josm_sidewalk_presets/raw/master/footway-wheelchair.png">
 					<link wiki="Key:footway" text="Footway wiki page" />
   			<space />
   			<key key="highway" value="footway" /> 
@@ -112,7 +112,7 @@
   <label text="kerb heights (use “N &lt;space&gt; cm”)" />
   <text key="kerb:height" text="kerb:height" />
   <space />
-  <check key="tactile_paving" text="is there a tactile paving in front of the kerb on the pavement?" />
+  <check key="tactile_paving" text="Tactile paving?" />
 </item>
 <item name="Entrance Details" icon="presets/misc/entrance_main.svg" type="node">
   <label text="entrances" />
