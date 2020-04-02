@@ -98,7 +98,7 @@
 	                <combo key="conveying" text="Escalator" values="yes,forward,backward,reversible" />
 			</item>
 		</group>
-<item name="Kerb details" icon="https://github.com/cliffordsnow/josm_sidewalk_presets/raw/master/kerb_rolled.png" type="node,way">
+<item name="Kerb Details" icon="https://github.com/cliffordsnow/josm_sidewalk_presets/raw/master/kerb_rolled.png" type="node,way">
   <label text="kerbs" />
   <space />
   <key key="barrier" value="kerb" />
