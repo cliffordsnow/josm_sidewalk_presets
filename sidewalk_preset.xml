@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+<presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0" 
+		author="Clifford Snow (Glassman@osm)" 
+		version="0.1" 
+		shortdescription="sidewalks, kerbs &amp; crosswalks" 
+		description="Add information about entrances, pavements, kerbs and crosswalks">
+<group name="Separate Sidewalks">
+		<group name="Footways">
+  			<item name="Sidewalk Details" type="way,closedway" icon="https://github.com/species/josm-preset-wheelchair/raw/master/footway-wheelchair.png">
+					<link wiki="Key:footway" text="Footway wiki page" />
+  			<space />
+  			<key key="highway" value="footway" /> 
+  			<check key="footway" text="Sidewalk?" value_on="sidewalk" /> 
+  			<text key="name" text="Name (e.g. Riverfront Walk)" />
+  			<text key="width" text="Width" />
+  			<combo key="surface" text="Surface" values="asphalt,paving_stones,cobblestone,concrete,grass_paver,gravel,ground,sand,wood"  /> 
+  			<combo key="smoothness" text="Smoothness" values="excellent,good,intermediate,bad,very_bad,horrible,very_horrible,impassable" />
+  			<link wiki="Key:smoothness"  text="Smoothness wiki page" />
+  			<space />
+  			<text key="incline" text="Incline (%)" /> 
+  			<text key="incline:across" text="Across Incline (%)" /> 
+  			<space />
+  			<combo key="bicycle" text="bicycles allowed?" values="no,designated" />
+  			<combo key="segregated" text="cycleway" values="yes,no" />
+  			<space />
+  			<combo key="tunnel" text="Tunnel" values="building_passage,yes"  />
+			<combo key="layer" text="Tunnel layer" values="-1,-2,-3,-4,-5" default="" />
+			</item>
+		</group>
+		<group name="Crossings">
+  			<item name="Crossing Details" type="way,closedway" icon="https://github.com/species/josm-preset-wheelchair/raw/master/footway-wheelchair.png">
+					<link wiki="Key:crossing" text="Crossing wiki page" />
+  			<space />
+  			<key key="highway" value="footway" /> 
+			<key key="footway" value="crossing" />
+  			<combo key="crossing" text="Crossing" values="unmarked,marked" default="unmarked" />
+  			<text key="width" text="Width" />
+  			<combo key="surface" text="Surface" values="asphalt,paving_stones,cobblestone,concrete,grass_paver,gravel,ground,sand,wood"  /> 
+  			<combo key="smoothness" text="Smoothness" values="excellent,good,intermediate,bad,very_bad,horrible,very_horrible,impassable" />
+  			<space />
+  			<label text="incline" />
+  			<space />
+  			<text key="incline" text="incline (%)" /> 
+  			<text key="incline:across" text="across incline (%)" /> 
+  			<space />
+  			<combo key="bicycle" text="bicycles allowed?" values="no,designated" />
+  			<combo key="segregated" text="cycleway" values="yes,no" />
+  			<space />
+  			<combo key="tunnel" text="Tunnel" values="building_passage,yes"  />
+			<combo key="layer" text="Tunnel layer" values="-1,-2,-3,-4,-5" default="" />
+			</item>
+		</group>
+		<group name="Crossing Islands">
+  			<item name="Island Details" type="way,closedway" icon="https://github.com/species/josm-preset-wheelchair/raw/master/footway-wheelchair.png">
+					<link wiki="Key:crossing:island" text="crossing islands wiki page" />
+  			<space />
+  			<key key="highway" value="footway" /> 
+  			<key key="footway" value="island" /> 
+	  			<!-- <key="footway" values="sidewalk,crossing,island" /> -->
+  			<text key="width" text="Width" />
+  			<combo key="surface" text="Surface" values="asphalt,paving_stones,cobblestone,concrete,grass_paver,gravel,ground,sand,wood"  /> 
+  			<combo key="smoothness" text="Smoothness" values="excellent,good,intermediate,bad,very_bad,horrible,very_horrible,impassable" />
+  			<space />
+  			<label text="incline" />
+  			<space />
+  			<text key="incline" text="incline (%)" /> 
+  			<text key="incline:across" text="across incline (%)" /> 
+  			<space />
+  			<combo key="bicycle" text="bicycles allowed?" values="no,designated" />
+  			<combo key="segregated" text="cycleway" values="yes,no" />
+  			<space />
+  			<combo key="tunnel" text="Tunnel" values="building_passage,yes"  />
+			<combo key="layer" text="Tunnel layer" values="-1,-2,-3,-4,-5" default="" />
+			</item>
+		</group>
+		<group name="Stairs">
+			<item name="Stairs" type="way,closedway" icon="presets/transport/way/steps.svg" >
+				<link wiki="Tag:highway=steps" text="highway=steps wiki page" />
+			<key key="highway" value="steps" />
+			<text key="step_count" text="Number of Steps" />
+			<combo key="surface" text="Surface" values="asphalt,paving_stones,cobblestone,concrete,grass_paver,gravel,ground,sand,wood"  />
+			<text key="incline:across" text="across incline (%)" />
+			<check key="ramp" text="Ramp" />
+	                <checkgroup columns="2" >
+	                    <check key="ramp:stroller" text="Stroller ramp" />
+	                    <check key="ramp:bicycle" text="Bicycle ramp" />
+	                </checkgroup>
+			<combo key="ramp:wheelchair" text="Wheelchair ramp" values="yes,limited,no" />
+                	<combo key="ramp:luggage" text="Luggage ramp" values="yes,automatic,manual,no" />
+	                <space />
+	                <check key="handrail" text="Handrail" />
+	                <checkgroup columns="3" >
+	                    <check key="handrail:left" text="Left handrail" />
+	                    <check key="handrail:center" text="Center handrail" />
+	                    <check key="handrail:right" text="Right handrail" />
+	                </checkgroup>
+	                <space />
+	                <combo key="conveying" text="Escalator" values="yes,forward,backward,reversible" />
+			</item>
+		</group>
+<item name="Kerb details" icon="https://github.com/species/josm-preset-wheelchair/raw/master/kerb_rolled.png" type="node,way">
+  <label text="kerbs" />
+  <space />
+  <key key="barrier" value="kerb" />
+  <combo key="kerb" text="type of kerb" >
+    <list_entry value="flush" icon="https://github.com/species/josm-preset-wheelchair/raw/master/kerb_flush.png" />
+    <list_entry value="lowered" icon="https://github.com/species/josm-preset-wheelchair/raw/master/kerb_lowered.png" />
+    <list_entry value="rolled" icon="https://github.com/species/josm-preset-wheelchair/raw/master/kerb_rolled.png" />
+    <list_entry value="raised" icon="https://github.com/species/josm-preset-wheelchair/raw/master/kerb_raised.png" />
+  </combo>
+  <space />
+  <label text="kerb heights (use “N &lt;space&gt; cm”)" />
+  <text key="kerb:height" text="kerb:height" />
+  <space />
+  <check key="tactile_paving" text="is there a tactile paving in front of the kerb on the pavement?" />
+</item>
+<item name="Entrance Details" icon="presets/misc/entrance_main.svg" type="node">
+  <label text="entrances" />
+  <space />
+  <combo key="entrance" text="type of entrance" values="main,service,emergency,exit,yes"  />
+  <space />
+  <combo key="automatic_door" text="Automatic Door" values="no,yes,button,continuous,slowdown_button,camera,floor,infrared" />
+  <combo key="door" text="door type" values="hinged,sliding,revolving,folding,trapdoor" />
+  <text key="width" text="width" />
+  <space />
+  <text key="step_count" text="step count" />
+  <space />
+  <check key="ramp" text="is there a ramp?" />
+  <check key="ramp:stroller"  text="ramp:stroller?" />
+  <text key="ramp:incline" text="incline (%)"  />
+  <check key="handrail:right"  text="handrail:right?" />
+  <check key="handrail:center"  text="handrail:center?" />
+  <check key="handrail:left"  text="handrail:left?"  />
+  <space />
+  <check key="wheelchair"  text="wheelchair?" />
+  <space />
+  <text key="level" text="level" />
+  <space />
+  <label text="Operator: please use Name of POI" />
+  <text key="operator" text="operator" />
+</item>
+</group>
+</presets> 
