@@ -4,7 +4,7 @@
 		version="0.1" 
 		shortdescription="sidewalks, kerbs &amp; crosswalks" 
 		description="Add information about entrances, pavements, kerbs and crosswalks">
-<group name="Separate Footways" icon="https://raw.githubusercontent.com/cliffordsnow/josm_sidewalk_presets/master/images/footway-wheelchair.png">>
+<group name="Separate Footways" icon="https://raw.githubusercontent.com/cliffordsnow/josm_sidewalk_presets/master/images/footway-wheelchair.png">
 		<group name="Footways">
   			<item name="Footways Details" type="way,closedway" icon="https://raw.githubusercontent.com/cliffordsnow/josm_sidewalk_presets/master/images/footway-wheelchair.png">
 					<link wiki="Key:footway" text="Footway wiki page" />
@@ -98,6 +98,26 @@
 	                <combo key="conveying" text="Escalator" values="yes,forward,backward,reversible" />
 			</item>
 		</group>
+		<item name="Pedestrian Crossing" icon="presets/vehicle/crossing.svg" type="node" preset_name_label="true">
+	            <link wiki="Key:crossing" text="Pedestrian Crossing wiki" />
+	            <space />
+	            <key key="highway" value="crossing" />
+	            <combo key="crossing" text="Pedestrian crossing type" >
+	                <list_entry value="unmarked" icon="presets/vehicle/crossing_unmarked.svg" />
+	                <list_entry value="marked" icon="presets/vehicle/crossing.svg" />
+	                <list_entry value="uncontrolled" icon="presets/vehicle/crossing.svg" />
+	                <list_entry value="traffic_signals" icon="presets/vehicle/crossing_traffic_signals.svg" />
+	            </combo>
+	            <combo key="kerb" text="Kerb" values="flush,lowered,no,raised,rolled,yes" values_context="kerb" />
+	            <combo key="supervised" text="Crossing attendant" delimiter="|" values="yes|no|06:00-20:00|Mo-Fr 09:00-18:00,Sa 08:00-14:00|May-Sep 09:30-12:30,14:15-19:30" />
+	            <combo key="tactile_paving" text="Tactile Paving" values="yes,no,incorrect" />
+	            <check key="crossing:island" text="With island" />
+	            <check key="bicycle" text="Cross by bicycle" />
+	            <check key="horse" text="Cross on horseback" />
+	            <label text="In case of traffic signals:" />
+	            <check key="button_operated" text="Button operated" />
+	            <check key="traffic_signals:sound" text="Sound signals" />
+	        </item> <!-- Pedestrian Crossing -->
 <item name="Kerb Details" icon="https://raw.githubusercontent.com/cliffordsnow/josm_sidewalk_presets/master/images/kerb_rolled.png" type="node,way">
   <label text="kerbs" />
   <space />
