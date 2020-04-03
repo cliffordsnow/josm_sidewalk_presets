@@ -4,7 +4,7 @@
 		version="0.1" 
 		shortdescription="sidewalks, kerbs &amp; crosswalks" 
 		description="Add information about entrances, pavements, kerbs and crosswalks">
-<group name="Separate Footways" icon="https://raw.githubusercontent.com/cliffordsnow/josm_sidewalk_presets/master/images/footway-wheelchair.png">>
+<group name="Separate Footways" icon="https://raw.githubusercontent.com/cliffordsnow/josm_sidewalk_presets/master/images/footway-wheelchair.png">
 		<group name="Footways">
   			<item name="Footways Details" type="way,closedway" icon="https://raw.githubusercontent.com/cliffordsnow/josm_sidewalk_presets/master/images/footway-wheelchair.png">
 					<link wiki="Key:footway" text="Footway wiki page" />
