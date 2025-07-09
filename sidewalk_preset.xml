@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?> 
 <presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0" 
 		author="Clifford Snow (Glassman@osm)" 
-		version="0.1" 
+		version="0.2" 
 		shortdescription="sidewalks, kerbs &amp; crosswalks" 
 		description="Add information about entrances, pavements, kerbs and crosswalks">
 <group name="Separate Footways" icon="https://raw.githubusercontent.com/cliffordsnow/josm_sidewalk_presets/master/images/footway-wheelchair.png">
@@ -16,6 +16,7 @@
   			<combo key="surface" text="Surface" values="asphalt,paving_stones,cobblestone,concrete,grass_paver,gravel,ground,sand,wood"  /> 
   			<combo key="smoothness" text="Smoothness" values="excellent,good,intermediate,bad,very_bad,horrible,very_horrible,impassable" />
   			<link wiki="Key:smoothness"  text="Smoothness wiki page" />
+            <combo key="lit" text="Lit" values="yes,no" />
   			<space />
   			<text key="incline" text="Incline (%)" /> 
   			<text key="incline:across" text="Across Incline (%)" /> 
@@ -33,7 +34,7 @@
   			<space />
   			<key key="highway" value="footway" /> 
 			<key key="footway" value="crossing" />
-  			<combo key="crossing" text="Crossing" values="unmarked,marked" default="unmarked" />
+  			<combo key="crossing:markings" text="Crossing Markings" values="no,surface,lines:paired,dashes,rainbow,lines:rainbow,zebra,zebra:double,zebra:paired,zebra:rainbow,ladder,ladder:skewed,ladder:paired,pictograms" default="no" />
   			<text key="width" text="Width" />
   			<combo key="surface" text="Surface" values="asphalt,paving_stones,cobblestone,concrete,grass_paver,gravel,ground,sand,wood"  /> 
   			<combo key="smoothness" text="Smoothness" values="excellent,good,intermediate,bad,very_bad,horrible,very_horrible,impassable" />
@@ -127,12 +128,14 @@
     <list_entry value="lowered" icon="https://raw.githubusercontent.com/cliffordsnow/josm_sidewalk_presets/master/images/kerb_lowered.png" />
     <list_entry value="rolled" icon="https://raw.githubusercontent.com/cliffordsnow/josm_sidewalk_presets/master/images/kerb_rolled.png" />
     <list_entry value="raised" icon="https://raw.githubusercontent.com/cliffordsnow/josm_sidewalk_presets/master/images/kerb_raised.png" />
+    <list_entry value="no" />
   </combo>
   <space />
   <label text="kerb heights (use “N &lt;space&gt; cm”)" />
   <text key="kerb:height" text="kerb:height" />
   <space />
   <check key="tactile_paving" text="Tactile paving?" />
+  <check key="tactile_paving:colour" text="Tactile paving color" values="yellow,red,brown,gray,black,white />
 </item>
 <item name="Entrance Details" icon="presets/misc/entrance_main.svg" type="node">
   <label text="entrances" />
