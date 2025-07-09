@@ -135,7 +135,7 @@
   <text key="kerb:height" text="kerb:height" />
   <space />
   <check key="tactile_paving" text="Tactile paving?" />
-  <check key="tactile_paving:colour" text="Tactile paving color" values="yellow,red,brown,gray,black,white" />
+  <combo key="tactile_paving:colour" text="Tactile paving color" values="yellow,red,brown,gray,black,white" />
 </item>
 <item name="Entrance Details" icon="presets/misc/entrance_main.svg" type="node">
   <label text="entrances" />
